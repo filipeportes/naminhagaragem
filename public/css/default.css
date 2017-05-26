@@ -1,0 +1,70 @@
+/* CSS declarations go here */
+body {
+    padding-top: 80px;
+}
+
+/* Vote list */
+.vote-item {
+    padding: 20px 25px;
+    background: #ffffff;
+    border-top: 1px solid #e7eaec;
+}
+.vote-item:last-child {
+    border-bottom: 1px solid #e7eaec;
+}
+.vote-item:hover {
+    background: #fbfbfb;
+}
+.vote-actions {
+    float: left;
+    width: 30px;
+    margin-right: 15px;
+    text-align: center;
+}
+.vote-actions a {
+    color: #1ab394;
+    font-weight: 600;
+}
+.vote-actions {
+    font-weight: 600;
+}
+.vote-title {
+    display: block;
+    color: inherit;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+.vote-title:hover,
+.vote-title:focus {
+    color: inherit;
+}
+.vote-info,
+.vote-title {
+    margin-left: 45px;
+}
+.vote-info,
+.vote-info a {
+    color: #b4b6b8;
+    font-size: 12px;
+}
+.vote-info a {
+    margin-right: 10px;
+}
+.vote-info a:hover {
+    color: #1ab394;
+}
+.vote-icon {
+    text-align: right;
+    font-size: 38px;
+    display: block;
+    color: #e8e9ea;
+}
+.vote-icon.active {
+    color: #1ab394;
+}
+body.body-small .vote-icon {
+    display: none;
+}
+

@@ -1,0 +1,37 @@
+<head>
+    <title>Na Minha Garagem</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<template name="layout">
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <div style="float: left;">
+                    <img src="/img/tr4.jpg" style="max-height:50px;">
+                </div>
+                <a href="../" class="navbar-brand">Na Minha Garagem</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav navbar-right">
+                    {{#if currentUser}}
+                        <li><a href="/logout" >Logout</a></li>
+                    {{else}}
+                        <li><a href="/sign-in" >Login</a></li>
+                        <li><a href="/sign-up" >Cadastre-se</a></li>
+                    {{/if}}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container" >
+        {{> Template.dynamic template=main}}
+    </div>
+</template>

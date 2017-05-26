@@ -1,0 +1,31 @@
+<template name="home">
+
+    {{#if not currentUser}}
+        <div class="well bs-component hidden-xs">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-7">
+                    Bem Vindo ao <b>Na Minha Garagem</b> Aqui você pode tirar suas dúvidas sobre o seu carro e obter respostas
+                    claras e precisas!
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-5">
+                    <div class="row">
+                        <i class="fa fa-commenting-o fa-2x"></i> Qualquer um pode Perguntar!
+                    </div>
+                    <div class="row">
+                        <i class="fa fa-comments-o fa-2x"></i> Qualquer um pode Responder!
+                    </div>
+                    <div class="row">
+                        <i class="fa fa-users fa-2x"></i> As melhores respostas são <b>Votadas</b> e ficam em <b>Destaque</b>!
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/if}}
+    <div style="float: right;">
+        <a class="btn btn-info" href="/questions/ask" >Faça um pergunta</a>
+    </div>
+
+    <div class="row">
+        {{> questions ""}}
+    </div>
+</template>

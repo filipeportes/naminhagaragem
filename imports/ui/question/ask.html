@@ -1,0 +1,19 @@
+<template name="ask">
+    <h4>Faça a sua pergunta!</h4>
+    <form class="js-ask-form">
+        <div class="panel panel-default" style="margin-top: 10px;">
+            <div class="panel-heading">
+                <input id="title" name="title" type="text"
+                       placeholder="Título da sua pergunta, seja o mais claro possível" class="form-control" required/>
+            </div>
+            <div class="panel-body">
+                <textarea id="text" name="text"
+                          rows="3" class="form-control" required>detalhe a sua pergunta</textarea>
+            </div>
+            <div class="panel-footer clearfix">
+                <button type="submit" class="btn btn-info">Salvar</button>
+                <a type="button" class="btn btn-default" href="/questions">Cancelar</a>
+            </div>
+        </div>
+    </form>
+</template>
